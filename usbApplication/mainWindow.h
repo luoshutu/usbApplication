@@ -5,7 +5,7 @@
 #include "ui_mainWindow.h"
 #include <QDebug>
 #include <QMap>
-#include "./Hpp/dataTransfer.h"
+#include ".\Hpp\usbCommunication.h"
 
 class mainWindow : public QMainWindow
 {
