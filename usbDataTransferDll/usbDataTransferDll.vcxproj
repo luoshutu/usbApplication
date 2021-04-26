@@ -82,7 +82,7 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\usbDataTransferDll\Hpp;..\usbDataTransferDll;..\usbDataTransferDll\Library\inc;$(IncludePath)</IncludePath>
     <LibraryPath>..\usbDataTransferDll\Library\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>

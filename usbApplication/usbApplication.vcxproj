@@ -70,7 +70,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Link>
-      <AdditionalDependencies>dataTransfer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>usbDataTransferDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -100,7 +100,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Src\usbCommunication.cpp" />
     <QtRcc Include="mainWindow.qrc" />
     <QtUic Include="mainWindow.ui" />
     <QtMoc Include="mainWindow.h" />
@@ -109,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Hpp\dataTransfer.h" />
-    <QtMoc Include="Hpp\usbCommunication.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
